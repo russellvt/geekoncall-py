@@ -1,5 +1,7 @@
 # GeekOncall Python Module (geekoncall-py)
 
+[![Build Status](https://app.travis-ci.com/russellvt/geekoncall-py.svg?branch=master)](https://app.travis-ci.com/russellvt/geekoncall-py)
+
 Python Module for testing release/test management on GitHub and others...
 
 ## Python Packaging
