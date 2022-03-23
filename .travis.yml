@@ -1,0 +1,6 @@
+language: python
+
+notifications:
+  email: true
+    on_failure: always
+    on_success: always
