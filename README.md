@@ -15,12 +15,13 @@ Some things used during the development of this module.
 * [Python Packaging User Guide](https://packaging.python.org/en/latest/)
   - [An Overview of Packaging for Python](https://packaging.python.org/en/latest/overview/)
   - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
-  - [Setup()](https://setuptools.readthedocs.io/en/latest/userguide/declarative_
-    config.html)
+  - [Setup()](https://setuptools.readthedocs.io/en/latest/userguide/declarative_config.html)
   - [PYPI Classifiers](https://pypi.org/classifiers/)
+
 
 * [Python Packaging Authority](https://www.pypa.io/en/latest/)
   - [PYPA Packaging - Source](https://github.com/pypa/packaging.python.org)
+
 
 * [TOX](https://tox.wiki/en/latest/)
   - [Packaging](https://tox.wiki/en/latest/example/package.html)
