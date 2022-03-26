@@ -11,11 +11,6 @@ python:
 - 3.8
 - 3.9
 
-dist:
-- trusty # Ubuntu 14.04 LTS
-- xenial # Ubuntu 16.04
-- bionic # Ubuntu 18.04
-
 jobs:
   include:
   - name: "Ubuntu 14.04 LTS (Python 2.7)"
@@ -61,7 +56,7 @@ jobs:
   - python: 3.9
     if: dist = trusty # Ubuntu 14.04 LTS
 
-            #
+#
 #virtualenv:
 #  system_site_packages: true
 
