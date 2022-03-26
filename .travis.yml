@@ -42,7 +42,6 @@ jobs:
 #  - https://docs.travis-ci.com/user/job-lifecycle/
 #  - https://docs.travis-ci.com/user/deployment/script/
 install:
-  - pip install build --upgrade
   - make build
 
 # before_script:
