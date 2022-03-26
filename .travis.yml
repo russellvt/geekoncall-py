@@ -18,11 +18,14 @@ dist:
 
 jobs:
   include:
-  - python: 2.7
+  - name: "Ubuntu 14.04 LTS (Python 2.7)"
+    python: 2.7
     dist: trusty
-  - python: 2.7
+  - name: "Ubuntu 16.04 (Python 2.7)"
+    python: 2.7
     dist: xenial
-  - python: 2.7
+  - name: "Ubuntu 18.04 (Python 2.7)"
+    python: 2.7
     dist: bionic
 
   - python: 3.6
@@ -41,22 +44,24 @@ jobs:
 
   allow_failures:
   - python: 3.6
-    if: dist = trusty
+    if: dist = trusty # Ubuntu 14.04 LTS
   - python: 3.6
-    if: dist = xenial
+    if: dist = xenial # Ubuntu 17.04
 
   - python: 3.7
-    if: dist = trusty
+    if: dist = trusty # Ubuntu 14.04 LTS
   - python: 3.7
-    if: dist = xenial
+    if: dist = xenial # Ubuntu 17.04
 
   - python: 3.8
-    if: dist = bionic
+    if: dist = trusty # Python 3.8 Not Installed  # Ubuntu 14.04 LTS
+  - python: 3.8
+    if: dist = bionic # Ubuntu 16.04
 
   - python: 3.9
-    if: dist = trusty
+    if: dist = trusty # Ubuntu 14.04 LTS
 
-
+            #
 #virtualenv:
 #  system_site_packages: true
 
