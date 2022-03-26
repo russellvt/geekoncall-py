@@ -12,24 +12,33 @@ python:
 - 3.9
 
 dist:
-- bionic
-- trusty
-- xenial
+- trusty # Ubuntu 14.04 LTS
+- xenial # Ubuntu 16.04
+- bionic # Ubuntu 18.04
 
 jobs:
   include:
-  - name: "Python 2.7"
-    python: "2.7"
+  - python: 2.7
+    dist: trusty
+  - python: 2.7
     dist: xenial
-  - name: "Python 3.8 on Xenial (Ubuntu 16.04)"
-    python: "3.8"
-    dist: xenial
-  - name: "Python 3.9 on Xenial (Ubuntu 16.04)"
-    python: "3.9"
-    dist: xenial
-  - name: "Python 3.9 on Bionic (Ubuntu 18.04)"
-    python: "3.9"
+  - python: 2.7
     dist: bionic
+
+  - python: 3.6
+    dist: xenial
+
+  - python: 3.7
+    dist: xenial
+
+  - python: 3.8
+    dist: xenial
+
+  - python: 3.9
+    dist: xenial
+  - python: 3.9
+    dist: bionic
+
   allow_failures:
   - python: 3.6
     if: dist = xenial
