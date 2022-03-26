@@ -13,14 +13,11 @@ python:
 
 jobs:
   include:
-  - name: "Ubuntu 14.04 LTS (Python 2.7)"
-    python: 2.7
+  - python: 2.7
     dist: trusty
-  - name: "Ubuntu 16.04 (Python 2.7)"
-    python: 2.7
+  - python: 2.7
     dist: xenial
-  - name: "Ubuntu 18.04 (Python 2.7)"
-    python: 2.7
+  - python: 2.7
     dist: bionic
 
   - python: 3.6
