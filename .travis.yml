@@ -8,6 +8,7 @@ jobs:
   include:
   - name: "Python 2.7"
     python: "2.7"
+    dist: xenial
   - name: "Python 3.6"
     python: "3.6"
     dist: trusty
@@ -16,13 +17,23 @@ jobs:
     python: "3.7"
     dist: trusty
     allow_failures: true
-  - name: "Python 3.8"
-    python: "3.8"
-  - name: "Python 3.9"
-    python: "3.9"
 
-virtualenv:
-  system_site_packages: true
+  - name: "Python 3.8 on Xenial (Ubuntu 16.04)"
+    python: "3.8"
+    dist: xenial
+  - name: "Python 3.8 on Bionic (Ubuntu 18.04)"
+    python: "3.8"
+    dist: bionic
+
+  - name: "Python 3.9 on Xenial (Ubuntu 16.04)"
+    python: "3.9"
+    dist: xenial
+  - name: "Python 3.9 on Bionic (Ubuntu 18.04)"
+    python: "3.9"
+    dist: bionic
+
+#virtualenv:
+#  system_site_packages: true
 
 # before_install:
 
