@@ -41,11 +41,20 @@ jobs:
 
   allow_failures:
   - python: 3.6
+    if: dist = trusty
+  - python: 3.6
     if: dist = xenial
+
+  - python: 3.7
+    if: dist = trusty
   - python: 3.7
     if: dist = xenial
+
   - python: 3.8
     if: dist = bionic
+
+  - python: 3.9
+    if: dist = trusty
 
 
 #virtualenv:
