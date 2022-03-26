@@ -11,6 +11,11 @@ python:
 - 3.8
 - 3.9
 
+dist:
+- bionic
+- trusty
+- xenial
+
 jobs:
   include:
   - name: "Python 2.7"
@@ -27,9 +32,9 @@ jobs:
     dist: bionic
   allow_failures:
   - python: 3.6
-    if: dist = trusty
+    if: dist = xenial
   - python: 3.7
-    if: dist = trusty
+    if: dist = xenial
   - python: 3.8
     if: dist = bionic
 
