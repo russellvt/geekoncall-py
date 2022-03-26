@@ -26,15 +26,12 @@ jobs:
     python: "3.9"
     dist: bionic
   allow_failures:
-  - name: "Python 3.6"
-    python: "3.6"
-    dist: trusty
-  - name: "Python 3.7"
-    python: "3.7"
-    dist: trusty
-  - name: "Python 3.8 on Bionic (Ubuntu 18.04)"
-    python: "3.8"
-    dist: bionic
+  - python: 3.6
+    if: dist = trusty
+  - python: 3.7
+    if: dist = trusty
+  - python: 3.8
+    if: dist = bionic
 
 
 #virtualenv:
