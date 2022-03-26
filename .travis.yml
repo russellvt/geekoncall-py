@@ -9,14 +9,6 @@ jobs:
   - name: "Python 2.7"
     python: "2.7"
     dist: xenial
-  - name: "Python 3.6"
-    python: "3.6"
-    dist: trusty
-    allow_failures: true
-  - name: "Python 3.7"
-    python: "3.7"
-    dist: trusty
-    allow_failures: true
 
   - name: "Python 3.8 on Xenial (Ubuntu 16.04)"
     python: "3.8"
@@ -31,6 +23,15 @@ jobs:
   - name: "Python 3.9 on Bionic (Ubuntu 18.04)"
     python: "3.9"
     dist: bionic
+
+  allow_failures:
+  - name: "Python 3.6"
+    python: "3.6"
+    dist: trusty
+  - name: "Python 3.7"
+    python: "3.7"
+    dist: trusty
+
 
 #virtualenv:
 #  system_site_packages: true
